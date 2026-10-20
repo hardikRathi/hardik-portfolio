@@ -39,10 +39,10 @@ export default function App() {
 
 name        ${profile.name}
 role        WordPress developer
-experience  3 years
-focus       WooCommerce, speed, custom plugins
+experience  nearly 4 years
+focus       WooCommerce, Core Web Vitals, plugins
 payments    Stripe
-data        REST API, GraphQL, ACF
+data        REST API, GraphQL, HubSpot, ACF
 status      open to roles and projects`}</pre>
           </div>
         </section>
