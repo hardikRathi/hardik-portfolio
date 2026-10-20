@@ -1,3 +1,4 @@
+import WorkCarousel from "./WorkCarousel.jsx";
 import { profile, services, projects, experience, skills, education } from "./data.js";
 
 const Section = ({ id, title, children }) => (
@@ -39,7 +40,7 @@ export default function App() {
 
 name        ${profile.name}
 role        WordPress developer
-experience  nearly 4 years
+experience  4 years
 focus       WooCommerce, Core Web Vitals, plugins
 payments    Stripe
 data        REST API, GraphQL, HubSpot, ACF
@@ -59,21 +60,7 @@ status      open to roles and projects`}</pre>
         </Section>
 
         <Section id="work" title="Selected work">
-          <div className="grid">
-            {projects.map((p) => (
-              <article key={p.title} className="card project">
-                {p.placeholder && <span className="badge">Placeholder: edit in src/data.js</span>}
-                <h3>{p.title}</h3>
-                <dl>
-                  <dt>Problem</dt><dd>{p.problem}</dd>
-                  <dt>Solution</dt><dd>{p.solution}</dd>
-                  <dt>Result</dt><dd>{p.result}</dd>
-                </dl>
-                <ul className="tags">{p.tech.map((t) => <li key={t}>{t}</li>)}</ul>
-                {p.link && <a href={p.link} target="_blank" rel="noreferrer">View project</a>}
-              </article>
-            ))}
-          </div>
+          <WorkCarousel projects={projects} />
         </Section>
 
         <Section id="experience" title="Experience">

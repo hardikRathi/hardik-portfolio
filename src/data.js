@@ -23,34 +23,34 @@ export const services = [
   { title: "Integrations and automation", text: "REST API, GraphQL and HubSpot form integrations, plus scheduled jobs for repetitive tasks." },
 ];
 
+// Add one screenshot per project in public/projects/ and match the file names below.
 export const projects = [
-  // Placeholders: replace with real work. Only add results you can back up.
   {
-    placeholder: true,
-    title: "WooCommerce store speed-up",
-    problem: "What was slow or broken for the client?",
-    solution: "What you changed, in plain language.",
-    result: "The measurable outcome, for example load time before and after.",
-    tech: ["WordPress", "WooCommerce", "PHP"],
-    link: "",
+    title: "Best Cataract Surgeons",
+    kind: "Surgeon directory, USA",
+    url: "https://bestcataractsurgeons.com/",
+    image: "/projects/best-cataract-surgeons.png",
+    summary: "A nationwide directory that helps patients find a cataract surgeon near them.",
+    contribution: "Built the map-based surgeon search. Visitors can look within a chosen radius, or search by ZIP code, city or state.",
+    tags: ["WordPress", "Maps", "Location search"],
   },
   {
-    placeholder: true,
-    title: "Stripe checkout integration",
-    problem: "What did the client need from payments?",
-    solution: "How you built and tested it.",
-    result: "What improved for the client's customers.",
-    tech: ["Stripe", "WooCommerce", "AJAX"],
-    link: "",
+    title: "RoboMQ",
+    kind: "Company website, workforce identity software",
+    url: "https://www.robomq.io/",
+    image: "/projects/robomq.png",
+    summary: "The marketing site for RoboMQ's Hire2Retire platform, which automates employee onboarding and offboarding.",
+    contribution: "Optimized site performance and helped it pass Core Web Vitals. Also connected HubSpot forms to capture more leads.",
+    tags: ["WordPress", "Core Web Vitals", "HubSpot"],
   },
   {
-    placeholder: true,
-    title: "Client-managed marketing site",
-    problem: "What did the client need to change themselves?",
-    solution: "The editing structure you set up.",
-    result: "How their workflow got easier.",
-    tech: ["ACF", "Divi", "CSS"],
-    link: "",
+    title: "Tappit Cards",
+    kind: "Digital business cards",
+    url: "https://tappitcards.com/",
+    image: "/projects/tappit-cards.png",
+    summary: "NFC and QR business cards that open a person's digital profile with a single tap or scan.",
+    contribution: "Helped build profile creation. Users make a fully customizable profile, and their QR code opens it for anyone who scans.",
+    tags: ["WordPress", "QR codes", "Custom profiles"],
   },
 ];
 
